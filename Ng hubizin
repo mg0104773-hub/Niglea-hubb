@@ -393,6 +393,67 @@ end);   end;
 
         end;
     end);
+end);   end;
+                CFrame_2 = SeatPart_4.CFrame;
+                Model_2 = SeatPart_4:FindFirstAncestorOfClass("Model");
+                if not Model_2 then
+                else 
+
+                end;
+                for for_key_2, for_val_2 in pairs(Model_2:GetDescendants()) do
+                    if for_key_2 then 
+
+                    end;
+                    if not for_val_2:IsA("BasePart") then
+                    else 
+                        for_val_2.CanCollide = false;
+                    end;
+                    for_val_2.AssemblyLinearVelocity = Vector3_New(0, 0, 0);
+                    for_val_2.AssemblyAngularVelocity = Vector3_New(0, 0, 0);
+                end;
+                Model_2:PivotTo(
+                    CFrame_New(
+                    (
+                        CFrame_2.Position + Vector3_New(0, 500, 0)
+                    ) + (
+                        CFrame_2.LookVector * (
+                            math.sin(
+                                os.clock() * 1e13
+                            ) * 1e6
+                        )
+                    )
+                ) * (
+                    CFrame_2 - CFrame_2.Position
+                )
+                );
+                for for_key_3, for_val_3 in pairs(Character:GetChildren()) do
+                    if not for_key_3 then
+                    else 
+
+                    end;
+                    if not for_val_3:IsA("BasePart") then
+                    else 
+                        for_val_3.CanCollide = false;
+                    end;
+                    for_val_3.AssemblyLinearVelocity = Vector3_New(0, 0, 0);
+                    for_val_3.AssemblyAngularVelocity = Vector3_New(0, 0, 0);
+                end;
+                HumanoidRootPart_2.CFrame = SeatPart_4.CFrame * CFrame_New(0, Humanoid_4.HipHeight, 0);
+            end);
+        end;
+        task.spawn(function()
+
+        end);
+    end);
+    r131 = Humanoid:GetPropertyChangedSignal("SeatPart"):Connect(function(p1_9, p2_9, p3_9, p4_9, p5_9, a_9, b_9, c_9)
+        Not_SeatPart_6 = not SeatPart;
+        if not Not_SeatPart_6 then 
+
+        end;
+        if not Not_SeatPart_6 then 
+
+        end;
+    end);
 end);local Character, Humanoid, SeatPart, Heartbeat, Connection, Humanoid_2, HumanoidRootPart, SeatPart_2, CFrame, Model, Vector3_New, CFrame_New, Connection_2, Connection_3, Humanoid_3, SeatPart_3, Humanoid_4, HumanoidRootPart_2, SeatPart_4, CFrame_2, Model_2, SeatPart_5, Not_SeatPart_6;
 local fenv = getfenv();
 if not pcall(function(p1, a, b, c)
